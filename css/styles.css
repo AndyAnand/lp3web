@@ -29,6 +29,12 @@ figure{
 	margin: 0px;
 }
 
+footer{
+	min-width: 80%;
+	max-width: 80%;
+	float: bottom;
+	margin-top: 60%;
+}
 
 .subtitle{
 	font-family:verdana;
