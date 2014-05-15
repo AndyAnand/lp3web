@@ -6,6 +6,7 @@
 		<link rel = "stylesheet" href = "css/styles.css" >
 		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=true"></script>
 		<script src="scripts/geo.js"></script>
+		<script src="scripts/cart.js"></script>
 		<title>Rogus Music - Compre sem sair de casa</title> 
 	</head>
 	
@@ -24,25 +25,37 @@
 					<img src="img/doggys_angels.jpg" alt="Pleezbaleevit!"><br>
 	                <b>Doggy's Angels</b><br>
 	                Pleezbaleevit!<br>
-	                R$ 19,90
+	                <span id="s10">R$ 19,90</span><br>
+                     Qnt.: <input class="inputbar" id ="quant10" type="number" value="0" min="0" onchange=calculaPreco() />
+                     <br>
+                     
 				</small>
 				<small>
 					<img src="img/ice_cube.jpg" alt="War & Peace Vol. 2 (The Peace Disc)"><br>
 					<b>Ice Cube</b><br>
 		            War &tilde; Peace 2<br>
-		            R$ 19,90
+		            <span id="s11">R$ 19,90</span><br>
+                     Qnt.: <input class="inputbar" id ="quant11" type="number" value="0" min="0" onchange=calculaPreco() />
+                     <br>
+                     
 		        </small>
 		        <small>
 		        	<img src="img/u2.jpg" alt="All That You Can't Leave Behind"><br>
 	                <b>U2</b><br>
 	                 All That You Can't Leave Behind<br>
-	                 R$ 21,90
+	                 <span id="s12">R$ 21,90</span><br>
+                     Qnt.: <input class="inputbar" id ="quant12" type="number" value="0" min="0" onchange=calculaPreco() />
+                     <br>
+                     
 				</small>
 				<small>
 					<img src="img/wtc.jpg" alt="The W"><br>
 	                <b>Wu Tan Clan</b><br>
 	                 The W<br>
-	                 R$ 24,90
+	                 <span id="s13">R$ 24,90</span><br>
+                     Qnt.: <input class="inputbar" id ="quant13" type="number" value="0" min="0" onchange=calculaPreco() />
+                     <br>
+                     
 				</small>
 			</section>
 			<section id = "main" >
@@ -51,63 +64,90 @@
 					<img src="img/wtc.jpg" alt="The W"><br>
                     <b>Wu Tan Clan</b><br>
              	     The W<br>
-                     R$ 24,90
+                     <span id="s1">R$ 24,90</span><br>
+                     Qnt.: <input class="inputbar" id ="quant1" type="number" value="0" min="0" onchange=calculaPreco() />
+                     <br>
+                     
 				</small>
 				<small class = "left_small">
 					<img src="img/wtc.jpg" alt="The W"><br>
                     <b>Wu Tan Clan</b><br>
                      The W<br>
-                     R$ 24,90
+                     <span id="s2">R$ 24,90</span><br>
+                     Qnt.: <input class="inputbar" id ="quant2" type="number" value="0" min="0" onchange=calculaPreco() />
+                     <br>
+                     
 				</small>
 				<small class = "left_small">
 					<img src="img/wtc.jpg" alt="The W"><br>
                     <b>Wu Tan Clan</b><br>
                      The W<br>
-                     R$ 24,90
+                     <span id="s3">R$ 24,90</span><br>
+                     Qnt.: <input class="inputbar" id ="quant3" type="number" value="0" min="0" onchange=calculaPreco() />
+                     <br>
+                     
                 </small>
                 <h3 id = "h3Offer" >Ofertas</h3>
                 <small class = "left_small">
 					<img src="img/wtc.jpg" alt="The W"><br>
                     <b>Wu Tan Clan</b><br>
              	     The W<br>
-                     R$ 24,90
+                     <span id="s4">R$ 24,90</span><br>
+                     Qnt.: <input class="inputbar" id ="quant4" type="number" value="0" min="0" onchange=calculaPreco() />
+                     <br>
+                     
 				</small>
 				<small class = "left_small">
 					<img src="img/wtc.jpg" alt="The W"><br>
                     <b>Wu Tan Clan</b><br>
              	     The W<br>
-                     R$ 24,90
+                     <span id="s5">R$ 24,90</span><br>
+                     Qnt.: <input class="inputbar" id ="quant5" type="number" value="0" min="0" onchange=calculaPreco() />
+                     <br>
+                     
 				</small>
 				<small class = "left_small">
 					<img src="img/wtc.jpg" alt="The W"><br>
                     <b>Wu Tan Clan</b><br>
              	     The W<br>
-                     R$ 24,90
+                     <span id="s6">R$ 24,90</span><br>
+                     Qnt.: <input class="inputbar" id ="quant6" type="number" value="0" min="0" onchange=calculaPreco() />
+                     <br>
+                     
 				</small>
 				<small class = "left_small">
 					<img src="img/wtc.jpg" alt="The W"><br>
                     <b>Wu Tan Clan</b><br>
              	     The W<br>
-                     R$ 24,90
+                     <span id="s7">R$ 24,90</span><br>
+                     Qnt.: <input class="inputbar" id ="quant7" type="number" value="0" min="0" onchange=calculaPreco() />
+                     <br>
+                     
 				</small>
 				<small class = "left_small">
 					<img src="img/wtc.jpg" alt="The W"><br>
                     <b>Wu Tan Clan</b><br>
              	     The W<br>
-                     R$ 24,90
+                     <span id="s8">R$ 24,90</span><br>
+                     Qnt.: <input class="inputbar" id ="quant8" type="number" value="0" min="0" onchange=calculaPreco() />
+                     <br>
+                     
 				</small>
 				<small class = "left_small">
 					<img src="img/wtc.jpg" alt="The W"><br>
                     <b>Wu Tan Clan</b><br>
              	     The W<br>
-                     R$ 24,90
+                     <span id="s9">R$ 24,90</span><br>
+                     Qnt.: <input class="inputbar" id ="quant9" type="number" value="0" min="0" onchange=calculaPreco() />
+                     <br>
+                     
 				</small>
             </section>
 			<aside>
 				<h3>Minhas Compras</h3>
 				<h4 class = "h4Css" >Meu Carrinho</h4>
-				<p class = "info" >Itens: 4</p>
-				<p class = "info" >Valor: R$ 65,90</p>
+				<p id = "itens" class = "info" >Itens: 0</p>
+				<p id = "valor" class = "info" >Valor: R$ 0,00</p>
 				<h4 class = "h4Css" >Sua Localização</h4>
 				<figure id = "mapa" >
 				</figure>
