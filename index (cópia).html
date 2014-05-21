@@ -5,9 +5,9 @@
 		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 		<link rel = "stylesheet" href = "css/styles.css" >
 		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=true"></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script src="scripts/geo.js"></script>
-		<script src="scripts/cart_jquery.js"></script>
+		<script src="scripts/cart.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<title>Rogus Music - Compre sem sair de casa</title> 
 	</head>
 	
@@ -27,7 +27,7 @@
 	                <b>Doggy's Angels</b><br>
 	                Pleezbaleevit!<br>
 	                <span id="s10">R$ 19,90</span><br>
-                     Qnt.: <input class="inputbar" id ="quant10" type="number" value="0" min="0"/>
+                     Qnt.: <input class="inputbar" id ="quant10" type="number" value="0" min="0" onchange=calculaPreco() />
                      <br>
                      
 				</small>
@@ -36,7 +36,7 @@
 					<b>Ice Cube</b><br>
 		            War &tilde; Peace 2<br>
 		            <span id="s11">R$ 19,90</span><br>
-                     Qnt.: <input class="inputbar" id ="quant11" type="number" value="0" min="0"/>
+                     Qnt.: <input class="inputbar" id ="quant11" type="number" value="0" min="0" onchange=calculaPreco() />
                      <br>
                      
 		        </small>
@@ -45,7 +45,7 @@
 	                <b>U2</b><br>
 	                 All That You Can't Leave Behind<br>
 	                 <span id="s12">R$ 21,90</span><br>
-                     Qnt.: <input class="inputbar" id ="quant12" type="number" value="0" min="0"/>
+                     Qnt.: <input class="inputbar" id ="quant12" type="number" value="0" min="0" onchange=calculaPreco() />
                      <br>
                      
 				</small>
@@ -54,7 +54,7 @@
 	                <b>Wu Tan Clan</b><br>
 	                 The W<br>
 	                 <span id="s13">R$ 24,90</span><br>
-                     Qnt.: <input class="inputbar" id ="quant13" type="number" value="0" min="0"  />
+                     Qnt.: <input class="inputbar" id ="quant13" type="number" value="0" min="0" onchange=calculaPreco() />
                      <br>
                      
 				</small>
@@ -66,7 +66,7 @@
                     <b>Wu Tan Clan</b><br>
              	     The W<br>
                      <span id="s1">R$ 24,90</span><br>
-                     Qnt.: <input class="inputbar" id ="quant1" type="number" value="0" min="0"  />
+                     Qnt.: <input class="inputbar" id ="quant1" type="number" value="0" min="0" onchange=calculaPreco() />
                      <br>
                      
 				</small>
@@ -75,7 +75,7 @@
                     <b>Wu Tan Clan</b><br>
                      The W<br>
                      <span id="s2">R$ 24,90</span><br>
-                     Qnt.: <input class="inputbar" id ="quant2" type="number" value="0" min="0"  />
+                     Qnt.: <input class="inputbar" id ="quant2" type="number" value="0" min="0" onchange=calculaPreco() />
                      <br>
                      
 				</small>
@@ -84,7 +84,7 @@
                     <b>Wu Tan Clan</b><br>
                      The W<br>
                      <span id="s3">R$ 24,90</span><br>
-                     Qnt.: <input class="inputbar" id ="quant3" type="number" value="0" min="0"  />
+                     Qnt.: <input class="inputbar" id ="quant3" type="number" value="0" min="0" onchange=calculaPreco() />
                      <br>
                      
                 </small>
@@ -94,7 +94,7 @@
                     <b>Wu Tan Clan</b><br>
              	     The W<br>
                      <span id="s4">R$ 24,90</span><br>
-                     Qnt.: <input class="inputbar" id ="quant4" type="number" value="0" min="0"  />
+                     Qnt.: <input class="inputbar" id ="quant4" type="number" value="0" min="0" onchange=calculaPreco() />
                      <br>
                      
 				</small>
@@ -103,7 +103,7 @@
                     <b>Wu Tan Clan</b><br>
              	     The W<br>
                      <span id="s5">R$ 24,90</span><br>
-                     Qnt.: <input class="inputbar" id ="quant5" type="number" value="0" min="0"  />
+                     Qnt.: <input class="inputbar" id ="quant5" type="number" value="0" min="0" onchange=calculaPreco() />
                      <br>
                      
 				</small>
@@ -112,7 +112,7 @@
                     <b>Wu Tan Clan</b><br>
              	     The W<br>
                      <span id="s6">R$ 24,90</span><br>
-                     Qnt.: <input class="inputbar" id ="quant6" type="number" value="0" min="0"  />
+                     Qnt.: <input class="inputbar" id ="quant6" type="number" value="0" min="0" onchange=calculaPreco() />
                      <br>
                      
 				</small>
@@ -121,7 +121,7 @@
                     <b>Wu Tan Clan</b><br>
              	     The W<br>
                      <span id="s7">R$ 24,90</span><br>
-                     Qnt.: <input class="inputbar" id ="quant7" type="number" value="0" min="0"  />
+                     Qnt.: <input class="inputbar" id ="quant7" type="number" value="0" min="0" onchange=calculaPreco() />
                      <br>
                      
 				</small>
@@ -130,7 +130,7 @@
                     <b>Wu Tan Clan</b><br>
              	     The W<br>
                      <span id="s8">R$ 24,90</span><br>
-                     Qnt.: <input class="inputbar" id ="quant8" type="number" value="0" min="0"  />
+                     Qnt.: <input class="inputbar" id ="quant8" type="number" value="0" min="0" onchange=calculaPreco() />
                      <br>
                      
 				</small>
@@ -139,7 +139,7 @@
                     <b>Wu Tan Clan</b><br>
              	     The W<br>
                      <span id="s9">R$ 24,90</span><br>
-                     Qnt.: <input class="inputbar" id ="quant9" type="number" value="0" min="0"  />
+                     Qnt.: <input class="inputbar" id ="quant9" type="number" value="0" min="0" onchange=calculaPreco() />
                      <br>
                      
 				</small>
